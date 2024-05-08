@@ -1,10 +1,11 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { IoLogoUsd } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 const Job = ({job}) => {
-    console.log(job)
-    const {logo,job_title,company_name,remote_or_onsite,job_type,location,salary}=job;
+    // console.log(job)
+    const {id,logo,job_title,company_name,remote_or_onsite,job_type,location,salary}=job;
 
     return (
         <div className="border-solid border-2 border-sky-900 p-4 rounded-lg space-y-1">
@@ -24,7 +25,12 @@ const Job = ({job}) => {
                 <br />
         
             </div>
-            <button className="btn btn-xs	 btn-outline btn-primary mr-2">View Details</button>
+            <div>
+            <Link to={`/job/${id}`}>
+                    <button className="btn btn-xs	 btn-outline btn-primary        mr-2">View Details
+                    </button>
+            </Link>
+            </div>
         </div>
     );
 };
