@@ -8,7 +8,7 @@ const Job = ({job}) => {
     const {id,logo,job_title,company_name,remote_or_onsite,job_type,location,salary}=job;
 
     return (
-        <div className="border-solid border-2 border-sky-900 p-4 rounded-lg space-y-1">
+        <div className="border p-4 rounded-lg space-y-1">
             <img className="w-24 mx-auto" src={logo} alt="" />
             <h3 className="font-semibold">{job_title}</h3>
             <h5>{company_name}</h5>
