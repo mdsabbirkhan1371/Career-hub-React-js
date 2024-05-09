@@ -10,6 +10,7 @@ import Statistics from './components/Statistics/Statistics.jsx';
 import ApplyiedJobs from './components/ApplyiedJobs/ApplyiedJobs.jsx';
 import Blog from './components/Blog/Blog.jsx';
 import JobsDetails from './components/JobsDetails/JobsDetails.jsx';
+import CategoryList from './components/CategoryList/CategoryList.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
         loader:()=>fetch('../public/jobs.json')
         
       }
+      
     ]
   }
 ])
