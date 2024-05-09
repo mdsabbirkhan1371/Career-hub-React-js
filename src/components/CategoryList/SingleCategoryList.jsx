@@ -4,7 +4,7 @@ const SingleCategoryList = ({jobCategory}) => {
     const {availability,category_name,logo}=jobCategory;
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-2xl">
                     <figure className="px-10 pt-10">
                         <img src={logo} alt="Shoes" className="rounded-xl" />
                     </figure>
